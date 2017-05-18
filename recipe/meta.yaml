@@ -31,6 +31,17 @@ requirements:
     - h5py
     - matplotlib
     - numpy x.x
+    - glimix-core
+    - limix-core
+    - limix-legacy
+    - scikit-learn
+    - dask
+    - pandas-plink
+    - joblib
+    - tqdm
+    - asciitree
+    - ncephes
+    - numpy-sugar
 
 test:
   requires:
