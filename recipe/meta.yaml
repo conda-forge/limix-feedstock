@@ -1,6 +1,6 @@
 {% set name = "limix" %}
-{% set version = "0.8.6" %}
-{% set sha256 = "e0ce91f22df6489cb01716d806f36e58723445d62c539a367d2b54126aa60db1" %}
+{% set version = "1.0.6" %}
+{% set sha256 = "8af0ca44b3545bb807b7e39af95ef1275c68c4cdf2403bd4ce399572698473e1" %}
 
 package:
   name: {{ name|lower }}
@@ -13,14 +13,15 @@ source:
 
 build:
   number: 0
-  skip: True  # [win or np==112]
-  script: python setup.py install --compatible --single-version-externally-managed --record record.txt
+  skip: True  # [win or linux32]
+  script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
   build:
     - python
     - setuptools
     - cython
+    - toolchain
     - numpy x.x
   run:
     - python
@@ -30,6 +31,17 @@ requirements:
     - h5py
     - matplotlib
     - numpy x.x
+    - glimix-core
+    - limix-core
+    - limix-legacy
+    - scikit-learn
+    - dask
+    - pandas-plink
+    - joblib
+    - tqdm
+    - asciitree
+    - ncephes
+    - numpy-sugar
 
 test:
   requires:
@@ -40,13 +52,13 @@ test:
     - python -c "import sys; import limix; sys.exit(limix.test())"
 
 about:
-  home: http://github.com/PMBio/limix
+  home: https://github.com/limix/limix
   license: Apache 2.0
   license_family: Apache
   license_file: LICENSE
   summary: 'A flexible and fast mixed model toolbox'
-  doc_url: https://github.com/PMBio/limix
-  dev_url: https://github.com/PMBio/limix
+  doc_url: https://limix.readthedocs.io
+  dev_url: https://github.com/limix/limix
 
 extra:
   recipe-maintainers:

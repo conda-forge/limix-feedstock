@@ -1,7 +1,7 @@
 About limix
 ===========
 
-Home: http://github.com/PMBio/limix
+Home: https://github.com/limix/limix
 
 Package license: Apache 2.0
 
