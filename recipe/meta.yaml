@@ -38,7 +38,7 @@ requirements:
     - dask
     - pandas-plink >=1.2.1
     - joblib >=0.11
-    - tqdm
+    - tqdm >=4.11.2
     - asciitree
     - ncephes >=1.0.40
     - numpy-sugar >=1.0.47
