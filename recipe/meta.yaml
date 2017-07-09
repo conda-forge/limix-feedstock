@@ -37,7 +37,7 @@ requirements:
     - scikit-learn
     - dask
     - pandas-plink >=1.2.1
-    - joblib
+    - joblib >=0.11
     - tqdm
     - asciitree
     - ncephes >=1.0.40
