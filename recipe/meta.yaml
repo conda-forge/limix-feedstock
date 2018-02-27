@@ -22,7 +22,7 @@ requirements:
     - setuptools
     - cython
     - toolchain
-    - numpy 1.11.*
+    - numpy 1.14.*
   run:
     - python
     - scikit-learn
@@ -30,7 +30,7 @@ requirements:
     - scipy >=0.19.1
     - h5py
     - matplotlib
-    - numpy >=1.11
+    - numpy >=1.14.1
     - glimix-core 1.2.*
     - limix-core >=1.0.1
     - limix-legacy >=0.8.12
