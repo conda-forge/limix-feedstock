@@ -1,5 +1,5 @@
 {% set name = "limix" %}
-{% set version = "1.0.12" %}
+{% set version = "1.0.13" %}
 {% set sha256 = "7c8951fe3fa40fd21858cf1aa30b31a08ffd87525c471827807237633d356d94" %}
 
 package:
