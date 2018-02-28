@@ -42,7 +42,7 @@ requirements:
     - tqdm
     - asciitree
     - ncephes
-    - numpy-sugar
+    - numpy-sugar >=1.2.3
 
 test:
   requires:
