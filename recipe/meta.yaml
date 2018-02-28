@@ -32,7 +32,7 @@ requirements:
     - h5py
     - matplotlib
     - numpy
-    - glimix-core
+    - glimix-core 1.2.*
     - limix-core
     - limix-legacy
     - scikit-learn
