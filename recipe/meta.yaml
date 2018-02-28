@@ -1,6 +1,6 @@
 {% set name = "limix" %}
-{% set version = "1.0.12" %}
-{% set sha256 = "7c8951fe3fa40fd21858cf1aa30b31a08ffd87525c471827807237633d356d94" %}
+{% set version = "1.0.17" %}
+{% set sha256 = "7426c89e4831575eb7cc09659135c1d8d57b6402d988063b140e02a94d6ffb8d" %}
 
 package:
   name: {{ name|lower }}
@@ -20,30 +20,29 @@ requirements:
   build:
     - python
     - setuptools
+    - pytest-runner
     - cython
     - toolchain
-    - numpy x.x
-    - numpy ==1.12
+    - numpy
   run:
     - python
     - scikit-learn
     - pandas
-    - scipy >=0.19.1
+    - scipy
     - h5py
     - matplotlib
-    - numpy x.x
-    - numpy ==1.12
-    - glimix-core >=1.2.19
-    - limix-core >=1.0.1
-    - limix-legacy >=0.8.12
+    - numpy
+    - glimix-core >=1.2.25,<1.3.0
+    - limix-core
+    - limix-legacy
     - scikit-learn
     - dask
-    - pandas-plink >=1.2.1
-    - joblib >=0.11
-    - tqdm >=4.11.2
+    - pandas-plink
+    - joblib
+    - tqdm
     - asciitree
-    - ncephes >=1.0.40
-    - numpy-sugar >=1.0.47
+    - ncephes
+    - numpy-sugar >=1.2.3
 
 test:
   requires:
