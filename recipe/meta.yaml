@@ -20,6 +20,7 @@ requirements:
   build:
     - python
     - setuptools
+    - pytest-runner
     - cython
     - toolchain
     - numpy
