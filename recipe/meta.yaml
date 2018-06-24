@@ -18,11 +18,12 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}
+  host:
     - python
     - setuptools
     - pytest-runner
     - cython
-    - toolchain
     - numpy
   run:
     - python
