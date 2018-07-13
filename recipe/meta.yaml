@@ -34,6 +34,7 @@ requirements:
     - humanfriendly >=4.12.1
     - joblib >=0.12.0
     - limix-core >=1.0.2
+    - limix-legacy >=0.8.12
     - matplotlib >=2.2.2
     - ndarray-listener >=1.1.2
     - numba >=0.38.1
