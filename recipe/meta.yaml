@@ -23,7 +23,7 @@ requirements:
     - pytest-runner
     - cython
     - toolchain
-    - numpy
+    - numpy >=1.14.5
   run:
     - python
     - asciitree >=0.3.3
@@ -38,7 +38,7 @@ requirements:
     - ndarray-listener >=1.1.2
     - numba >=0.38.1
     - numpy-sugar >=1.2.5
-    - numpy >=1.14.5
+    - numpy  >=1.14.5
     - pandas-plink >=1.2.28
     - pandas >=0.23.3
     - pypandoc >=1.4
