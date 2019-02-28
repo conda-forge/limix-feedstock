@@ -38,7 +38,7 @@ requirements:
     - limix-plot >=0.0.11 # needs recipe
     - matplotlib >=2.2.3
     - ndarray-listener >=1.1.2
-    - netcdf4 >= 1.4.0
+    - netcdf4 >=1.4.0
     - numba >=0.39.0
     - numpy >=1.15.0
     - numpy-sugar >=1.2.8
