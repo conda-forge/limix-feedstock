@@ -17,7 +17,7 @@ build:
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
-  build:
+  host:
     - numpy >=1.16.2
     - pip
     - pytest-runner
