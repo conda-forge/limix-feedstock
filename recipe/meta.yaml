@@ -18,13 +18,11 @@ build:
 
 requirements:
   build:
-    - cython
     - numpy >=1.16.2
     - pip
     - pytest-runner
     - python >3
     - setuptools
-    - toolchain
   run:
     - appdirs >=1.4.3
     - asciitree >=0.3.3
