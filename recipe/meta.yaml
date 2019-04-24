@@ -1,6 +1,6 @@
 {% set name = "limix" %}
-{% set version = "3.0.0" %}
-{% set sha256 = "17be1695918bec0e76804092724aa529ac69027464b7449551b020df8d576784" %}
+{% set version = "3.0.1" %}
+{% set sha256 = "5f6c966c67b97f4aa2dd8f316b3de7e5476e8a227e4acf52be6677dee26fa74d" %}
 
 package:
   name: {{ name|lower }}
@@ -32,7 +32,7 @@ requirements:
     - click >=7.0
     - colorama >=0.4.1
     - dask[array,dataframe] >=1.2.0
-    - glimix-core >=3.1.5
+    - glimix-core >=3.1.7
     - h5py >=2.9.0
     - humanfriendly >=4.18
     - joblib >=0.13.2
@@ -54,9 +54,8 @@ requirements:
     - scipy >=1.2.1
     - seaborn >=0.9.0
     - setuptools >=41.0.0
-    - sphinxcontrib-programoutput >=0.14
+    - sphinxcontrib-programoutput >=0.11
     - statsmodels >=0.9.0
-    - struct-lmm >=0.2.4
     - tqdm >=4.31.1
     - xarray >=0.12.1
 
