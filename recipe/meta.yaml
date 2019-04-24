@@ -71,7 +71,7 @@ about:
   home: https://github.com/limix/limix
   license: Apache 2.0
   license_family: Apache
-  license_file: LICENSE
+  license_file: LICENSE.md
   summary: 'A flexible and fast mixed model toolbox'
   doc_url: https://limix.readthedocs.io
   dev_url: https://github.com/limix/limix
