@@ -1,6 +1,6 @@
 {% set name = "limix" %}
-{% set version = "3.0.2" %}
-{% set sha256 = "b1fc7e647b2ed682babf472e1b52939a03bec390c6f4527ca7af943991326c8e" %}
+{% set version = "3.0.3" %}
+{% set sha256 = "25a7a36de00cb804ca2ea9b9497ef8939f39295a9a14dd59ff720813cb7e4749" %}
 
 package:
   name: {{ name|lower }}
@@ -54,7 +54,6 @@ requirements:
     - scipy >=1.2.1
     - seaborn >=0.9.0
     - setuptools >=41.0.0
-    - sphinxcontrib-programoutput >=0.11
     - statsmodels >=0.9.0
     - tqdm >=4.31.1
     - xarray >=0.12.1
