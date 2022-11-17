@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
@@ -37,7 +37,7 @@ requirements:
     - humanfriendly >=4.18
     - joblib >=0.13.2
     - limix-plot >=0.1.0
-    - matplotlib >=3.0.3
+    - matplotlib-base >=3.0.3
     - monotonic >=1.5
     - ndarray-listener >=2.0.0
     - netcdf4 >=1.5.0.1
