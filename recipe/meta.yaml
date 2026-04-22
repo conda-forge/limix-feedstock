@@ -8,12 +8,12 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
@@ -21,7 +21,7 @@ requirements:
     - numpy >=1.16.2
     - pip
     - pytest-runner
-    - python >3
+    - python {{ python_min }}
     - setuptools
   run:
     - appdirs >=1.4.3
@@ -49,7 +49,7 @@ requirements:
     - pandas-plink >=2.0.1
     - pytest >=4.4.1
     - pytest-doctestplus >=0.4.0
-    - python >3
+    - python >={{ python_min }}
     - scikit-learn >=0.21.3
     - scipy >=1.2.1
     - seaborn >=0.9.0
@@ -61,6 +61,7 @@ requirements:
 test:
   requires:
     - pytest >=3
+    - python {{ python_min }}
   imports:
     - limix
   commands:
